@@ -41,5 +41,6 @@
 		<module>serv-workflow</module>
 		<module>lib-dao</module>
 		<module>lib-transaction</module>
+		<module>app</module>
 	</modules>
 </project>
