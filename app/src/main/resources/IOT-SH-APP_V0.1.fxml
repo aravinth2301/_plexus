@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pnlBase" fx:controller="lk.sns.controller.PanelController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="pnlHeader" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #003059;">
+         <children>
+            <ImageView fx:id="btnClose" onMouseClicked="#btnCloseEvent" layoutX="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/close.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pnlMain" layoutY="50.0" prefHeight="350.0" prefWidth="300.0" style="-fx-background-color: #003059;">
+         <children>
+            <Label layoutX="50.0" layoutY="20.0" prefHeight="30.0" prefWidth="200.0" text="NETWORK ID" textFill="WHITE" />
+            <TextField layoutX="50.0" layoutY="50.0" prefHeight="30.0" prefWidth="200.0" fx:id="txtNetworkId" />
+            <Label layoutX="50.0" layoutY="100.0" prefHeight="30.0" prefWidth="200.0" text="USERNAME" textFill="WHITE" />
+            <TextField layoutX="50.0" layoutY="130.0" prefHeight="30.0" prefWidth="200.0" fx:id="txtUsername"/>
+            <PasswordField layoutX="50.0" layoutY="210.0" prefHeight="30.0" prefWidth="200.0" fx:id="txtPassword" />
+            <Label layoutX="50.0" layoutY="180.0" prefHeight="30.0" prefWidth="200.0" text="PASSWORD" textFill="WHITE" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="169.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#btnSaveEvent" >
+               <image>
+                  <Image url="@img/save.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="83.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#btnEditEvent">
+               <image>
+                  <Image url="@img/edit.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
